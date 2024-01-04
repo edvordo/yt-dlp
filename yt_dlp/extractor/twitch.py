@@ -527,6 +527,7 @@ class TwitchVodIE(TwitchBaseIE):
                     'duration': fragment_duration,
                 } for path in images],
             }
+
     def _extract_chat(self, vod_id):
         chat_history = []
         has_more_pages = True
